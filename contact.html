@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+             h2{
+                text-align: center;
+                background-color: aquamarine;
+                font-style: italic;
+            
+            }
+            .body{
+                background-color: rgb(113, 164, 135);
+                font-size: xx-large;
+                width: 100%;
+            }
+        
+            .footer {
+                text-align:right;
+                border:1px solid black ;
+                padding: 10px;
+                background-color: aquamarine;
+                
+            }
+            .fname {
+                margin:30px;
+                font-weight: 300;
+                text-align: center;
+                display:block;
+            }
+            .fbuttons {
+                margin: 30px;
+                padding: 10px;
+                text-align: center;
+        display: block;
+                font-weight: 300;
+                size: 40pix;
+            }
+            a:unvisited{
+                color: black;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <header class="header">
+            <h2>
+                <i class="fas fa-address-book fa-xsmall"></i> Contact
+            </h2>
+        </header>
+        <main class="main">
+
+            <div class="forms">
+                <form action="registration.html" method="get">
+                   <fieldset>
+                    <div class="fname">
+                        <label for="fname">Full Name</label>
+                        <input type="text" name="fname" id="fname"placeholder="full name" size="60pix" max="60" required><br>
+                    </div>
+                    <div class="fname">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"  placeholder="email" size="50pix" required><br>
+                    </div>
+                    <div class="fname">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message" placeholder="Text here" size="40pix" required>
+                    </div>
+                    <div class="fbuttons">
+                        <input type="button" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                   </fieldset> 
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+        <a href="aboutme.html" title="about">Back to Homepage</a> &gt; <a href="#contact" title="contact">Contact Us</a> &gt; <a href="registration.html" title="register">Register</a>&gt; <a href="login.html">Login</a>
+        </footer>
+    </body>
+</html>

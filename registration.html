@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Here</title>
+        <link rel="stylesheet" href="register.css">
+        <script src="https://kit.fontawesome.com/8a9259e15f.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: blueviolet;
+                width: 100%;
+            }
+            .header{
+                text-align: center;
+            }
+            #form {
+                margin-top:40px;
+                font-weight: 400;
+                font-size: x-large;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+            }
+
+
+            .footer {
+                text-align: center;
+                font-size: x-large;
+                color: cyan;
+                text-align: right;
+                margin-top: 30px;
+            }
+            footer,
+            a {
+                color: black;
+            }
+          .copy{
+              margin-top: 20px;
+              justify-content: center;
+              text-align: justify;
+              color: black;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2 class="header">REGISTER HERE</h2>
+        </header>
+        <main>
+            <form action="login.html" method="get" id="form">
+                <fieldset>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="firstname" required><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="lastname" required><br>
+                    <label for="pumber">Phone number</label>
+                    <input type="number" name="pnumber" id="pnumber" required pattern="+[0-9}[3]-[0-9][3]-[0-9][3]-[0-9][3]-[0-9][1]" placeholder="+234-567-890-123-4"><br>
+                    <p>Select Your Gender</p>
+                    <input type="radio" name="genderbutttons" id="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" name="genderbutttons" id="female">
+                    <label for="female">Female</label><br>
+                    <label for="country_list">Select your Country</label>
+                    <select name="country_list" id="country">
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="usa">United States of America</option>
+                        <option value="Autralia">Australia</option>
+                        <option value="Japan">Japan</option>
+                    </select><br>
+                    <label for="state">Select Your State/Province</label>
+                    <select name="state" id="state">
+                        <option value="Abia">Abia</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Canberra">Canberra</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Sydney">Sydney</option>
+                        <option value="Zamfara">Zamfara</option>
+                    </select><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" pattern=".+@gmail\.com" size="30" placeholder="email" required><br>
+                    <label for="password">Input Your Password</label>
+                    <input type="password" name="password" id="password" placeholder="placeholder" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">
+            <a href="aboutme.html" title="about">Back to Homepage</a>
+            &gt;
+            <a href="contact.html" title="contact">Contact Us</a>
+            &gt;
+            <a href="#registration.html" title="register">Register</a>&gt;
+            <a href="login.html" title="login">Login</a>
+            <p class="copy">
+                &copy;Busayo</p>
+        </footer>
+    </body>
+</html>l

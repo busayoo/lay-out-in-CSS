@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1 &display=swap');
+            * {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+            }
+            a{
+                text-decoration: none;
+                color: red;
+            }
+            .main {
+                display: flex;
+                border: 2px soild black;
+                /* width: 100%;
+            height: 100%; */
+                padding: 2em;
+                /* margin :auto; */
+                justify-content: center;
+                background-color: rgb(255, 133, 155);
+                background-image: url('bg-intro-desktop.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .container {
+                /* background-color: white; */
+                width: 50%;
+                vertical-align: middle;
+                padding: 10px;
+                /* box-sizing: border-box; */
+                /* margin-right: 20px; */
+
+            }
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border-radius: 4px;
+                border: 1px solid grey;
+                /* margin-left:20px ; */
+
+
+            }
+            .text {
+                margin: auto;
+                width: 50%;
+                /* height: 50%; */
+                color: white;
+                padding: 2em;
+                /* vertical-align: middle; */
+            }
+            h6 {
+                color: rgb(117, 117, 101);
+                margin: auto;
+                text-align: center;
+
+
+            }
+            button {
+                padding: 1em;
+                background-color: hsl(154, 59%, 51%);
+                border-radius: 5px;
+                box-shadow: 2px 2px gray;
+                color: white;
+                text-align: center;
+                /* display: flex; */
+                width: 100%;
+                margin-top:10px ;
+                margin-bottom:10px ;
+                border-color: grey;
+                
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            .top {
+                padding: 10px 20px;
+                background-color: hsl(248, 32%, 49%);
+                border-radius: 2px;
+                box-shadow: 2px 4px gray;
+                color: white;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .box{
+                background-color: white;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 2px;
+                box-shadow: 2px 4px gray;
+                padding: 20px;
+            }
+            .end{
+                text-transform: uppercase;
+                text-decoration:;            }
+            @media(max-width:375px) {
+                .main {
+                    flex-direction: column;
+                    /* flex-wrap: wrap; */
+                }
+                .container{
+                    width: 100%;
+                    
+                }
+                .text{
+                width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="text">
+                <h2>
+                    Learn to code by watching others.
+                </h2>
+                <p>
+                    See how experienced developers solve problems in real-time.<br>
+                    Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                </p>
+            </div>
+            <div class="container">
+                <div class="top">
+                    <p>Try it free for 7 days
+                        <span class="small">then 20$/mo.thereafter</span>
+                    </p>
+                </div>
+                <div class="box">
+                <form
+                    action="" method="get" id="form">
+                    <input type="text" name="fname" id="fname" placeholder="firstname" required><br>
+                    <input type="text" name="lname" id="lname" placeholder="lastname" required><br>
+                    <input type="email" name="email" id="email" pattern=".+@gmail\.com" size="30" placeholder="email" required><br>
+                    <input type="password" name="password" id="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+                    <div class="end">
+                        <button>Claim Your Free Trial</button>
+                    </div>
+                    <h6>By clicking the button you are agreeing to our
+                        <a href="">
+                            Terms and Services</a>
+                    </h6>
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

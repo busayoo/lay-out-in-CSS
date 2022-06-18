@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+            #form_container {
+                margin-top: 200px;
+                font-weight: 400;
+                font-size: x-large;
+                background-image: url("loginpicture.jpg");
+                justify-content: center;
+                width: 100%;
+                display: flex;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .form {
+                /* background-color: white; */
+                padding: 20px;
+            }
+            .body {
+                background-color: blueviolet;
+            }
+            .footer{
+                text-align: center;
+                font-size: x-large;
+                color: cyan;
+                text-align: right;
+                margin-top: 30px;
+            }
+          footer, a{
+            color: black;
+            }
+            .btn{
+                 justify-content: center;
+                margin-top: 20px;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div id="form_container">
+            <div class="form">
+                <form action="" method="get">
+                    <fieldset>
+                        <header>
+                            <h2>LOGIN HERE</h2>
+                        </header>
+                        <main>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email" size="50pix" required><br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="pswd" placeholder="password" size="50pix" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+                        <input type="button" value="LOGIN" class="btn">
+                        </main>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="aboutme.html" title="about">Back to Homepage</a> &lt; <a href="contact.html" title="contact">Contact Us</a> &lt; <a href="registration.html" title="register">Register</a>&lt; <a href="#login" title="login">Login</a>
+        </footer>
+    </body>
+</html>

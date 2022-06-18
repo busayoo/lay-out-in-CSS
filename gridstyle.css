@@ -1,0 +1,36 @@
+/* container */
+main {
+    display: grid;
+    /* gap:2px; */
+    background-color: rgb(28, 23, 23);
+    padding: 2em;
+    grid-template-areas: 'a a a b' 'c c d d' 'c c e e';
+    height: 300px;
+    width:400px;
+    margin: 120px auto auto;
+}
+main div {
+    padding: 2em;
+    text-align: center;
+    margin: 5px;
+}
+.carda {
+    background-color: rgb(246, 73, 21);
+    grid-area: a;
+}
+.cardb {
+    background-color: rgb(253, 169, 12);
+    grid-area: b;
+}
+.cardc {
+    background-color: rgb(31, 202, 31);
+    grid-area: c;
+}
+.cardd {
+    background-color: rgb(19, 164, 217);
+    grid-area: d;
+}
+.carde {
+    background-color: rgb(19, 164, 217);
+    grid-area: e;
+}

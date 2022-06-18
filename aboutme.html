@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <script src="https://kit.fontawesome.com/8a9259e15f.js" crossorigin="anonymous"></script>
+        <style>
+            html,
+            body {
+                width: 100%;
+            }
+
+            header {
+                background-color: rgb(150, 240, 212);
+            }
+            ul.breadcrumbs {
+                padding: 10px 16px;
+                background-color: rgb(68, 194, 123); !important
+            }
+            ul.breadcrumbs li {
+                display: inline;
+                font-size: 18px;
+            }
+            ul.breadcrumbs li+li::before {
+                padding: 8px;
+                color: black;
+                content: "/\00a0";
+            }
+            ul.breadcrumbs li a {
+                color: rgb(5, 5, 5);
+            }
+            header {
+                border: 1px solid rgb(4, 4, 4);
+            }
+            .aboutme{
+                align: center;
+                font-size: larger;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Space!</h1>
+            <nav>
+                <ul class="breadcrumbs">
+                    <li>
+                        <i class="fas fa-house-user fa-xsmall"></i>
+                        <a href="#aboutme" title="aboutme">About Me</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-address-book fa-xsmall"></i>
+                        <a href="" title="contact">Contact</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-table-list fa-xsmall"></i>
+                        <a href="" title="registration">Registration</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user fa-xsmall"></i>
+                        <a href="" title="login">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="aboutme">
+                <h1>About Me</h1>
+                <hr>
+                <h2>Eyiomo Busayo Funlola</h2>
+                <img src="busayo.jpeg.jpg" alt="" width="30%" height="20%" loading="lazy">
+                <p>I am a committed and goal oriented web developer who likes to sketch sometimes. What a blend,hehe:).I really love pleasing my aesthetics,reading and doodling occasionally.</p>
+                <p>
+                    My I.T trajectory has led me this far and I would say it has been a great time of learning with some ocassional lapses but I would'nt stop till I reach my zenith.One of my goals is to become fully grounded as a front end webdeveloper with some work experience before the year runs out.
+                </p>
+                <p>I have a certification in HTML5 and I am a social media handler as well.</p>
+            </section>
+        </main>
+        <footer>
+           <p>To contact me,click here<a href="" aria-label="contact me"><i class="fas fa-address-book fa-xsmall"></i></a></p> 
+        </footer>
+    </body>
+</html>
